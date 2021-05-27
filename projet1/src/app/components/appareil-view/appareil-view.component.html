@@ -1,0 +1,9 @@
+<app-appareil-list-view
+    *ngFor="let appareil of appareils"
+    [titre]="appareil.titre"
+    [status]="appareil.status"
+    [date]="appareil.date">
+</app-appareil-list-view>
+
+<button (click)="onAllumer()">Tout allumer</button>
+<button (click)="onEteindre()">Tout éteindre</button>

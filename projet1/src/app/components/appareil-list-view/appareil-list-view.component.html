@@ -1,0 +1,11 @@
+<div [ngStyle]="{'background-color': (status=='Allumé') ? 'green' : 'red'}">
+    <div style="background-color: white;">
+        <p [ngStyle]="{'color': (status=='Allumé') ? 'green' : 'red'}">
+            {{ titre }}
+        </p>
+    </div>
+    <p>{{ status }}</p>
+    <p>{{ date | date: 'fullDate' }}</p>
+    <button type="button" (click)="getStatus(true)">Allumer</button>
+    <button type="button" (click)="getStatus(false)">Eteindre</button>
+</div>
